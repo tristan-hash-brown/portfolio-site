@@ -49,8 +49,8 @@ if (contactForm) {
         } else { throw new Error("server"); }
       })
       .catch(() => {
-        if (btn) { btn.disabled = false; btn.textContent = "Send Request"; }
-        alert("Something went wrong — please email tristanyacub+webstudio@gmail.com directly.");
+        if (btn) { btn.disabled = false; btn.textContent = "Get a Free Pricing Call"; }
+        alert("Something went wrong — please email EMAIL_ADDRESS_HERE directly.");
       });
   });
 }

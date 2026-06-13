@@ -16,11 +16,12 @@ pricing/index.html                  Pricing
 process/index.html                  Process
 contact/index.html                  Contact
 
-demos/redline-plumbing/             Redline Plumbing & Drains demo
-demos/sparkright-electrical/        SparkRight Electrical demo
+demos/redline-plumbing/             Redline Plumbing & Drains demo (multi-page: home, services, about, areas, contact)
+demos/sparkright-electrical/        SparkRight Electrical demo (multi-page: home, services, about, areas, contact)
 demos/sweetcrumb-cakes/             SweetCrumb Cakes demo
 demos/island-manila-bites/          Island Manila Bites demo
-demos/demandem/                     DEMANDEM demo
+demos/demandem/                     DEMANDEM brand campaign demo
+demos/summitshield-roofing/         SummitShield Roofing demo
 
 css/styles.css                      Portfolio site styles
 js/main.js                          Portfolio site scripts
@@ -58,8 +59,9 @@ Note: GitHub Pages serves from a subdirectory path, which may affect root-relati
 
 **Portfolio site**
 - [ ] Confirm `https://tristanwebstudio.ca/` is the intended live domain
-- [ ] Confirm `tristanyacub+webstudio@gmail.com` is the intended public business email
-- [ ] Confirm the contact form endpoint in `contact/index.html` is connected to the right inbox
+- [x] `EMAIL_ADDRESS_HERE` confirmed as public business email
+- [x] Contact form endpoint in `contact/index.html` connected to real Formspree endpoint (`mnjyovyd`)
+- [x] Pricing urgency banner updated for current founding-client availability
 - [ ] Confirm all prices, service descriptions, and availability notes are accurate
 
 **Fictional demos**

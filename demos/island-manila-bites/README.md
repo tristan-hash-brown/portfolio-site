@@ -38,7 +38,7 @@ This copy is integrated into the Tristan Web Studio portfolio at:
 Open this file directly in a browser:
 
 ```text
-island-manila-bites-demo/index.html
+demos/island-manila-bites/index.html
 ```
 
 No local server is required for normal viewing.

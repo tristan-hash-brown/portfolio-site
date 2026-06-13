@@ -22,7 +22,7 @@ The demo shows how a home baker can move visitors from scattered Instagram DMs a
 Open this file in a browser:
 
 ```text
-sweetcrumb-cakes-demo/index.html
+demos/sweetcrumb-cakes/index.html
 ```
 
 No build step, framework, backend, npm install, database, or form service is required.
