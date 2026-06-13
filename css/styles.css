@@ -623,14 +623,22 @@ h3 {
 
 .project-carousel {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(280px, 86%);
-  gap: 1rem;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 0.25rem;
-  padding: 0.25rem 0.25rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  padding: 0.25rem 0;
+}
+
+@media (max-width: 639px) {
+  .project-carousel {
+    grid-auto-flow: column;
+    grid-template-columns: unset;
+    grid-auto-columns: minmax(280px, 86%);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 0.25rem;
+    padding: 0.25rem 0.25rem 1rem;
+  }
 }
 
 .project-card {
@@ -1140,10 +1148,6 @@ textarea {
     align-items: end;
   }
 
-  .project-carousel {
-    grid-auto-columns: minmax(360px, 42%);
-  }
-
   .cta-box,
   .footer-grid {
     grid-template-columns: 1fr auto;
@@ -1180,9 +1184,6 @@ textarea {
     grid-template-columns: 1.2fr 1fr auto;
   }
 
-  .project-carousel {
-    grid-auto-columns: minmax(390px, 34%);
-  }
 }
 
 .scope-list {
@@ -1190,4 +1191,23 @@ textarea {
   padding-left: 1.25rem;
   font-size: 0.9rem;
   line-height: 1.9;
+}
+
+.fit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.fit-tags span {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: var(--color-cloud);
+  border: 1px solid var(--color-grey);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-navy);
 }

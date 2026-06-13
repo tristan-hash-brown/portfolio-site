@@ -36,7 +36,7 @@ if (contactForm) {
       })
       .catch(() => {
         if (btn) { btn.disabled = false; btn.textContent = "Send Request"; }
-        alert("Something went wrong — please email hello@yourdomain.ca directly.");
+        alert("Something went wrong — please email tristanyacub+webstudio@gmail.com directly.");
       });
   });
 }
