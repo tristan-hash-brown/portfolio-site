@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEMANDEM — Apply Pressure</title>
+  <meta name="description" content="DEMANDEM — One Mindset. Everywhere. Register interest for Campaign 001." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero section">
+      <div class="hero-inner">
+        <p class="eyebrow">ONE MINDSET. EVERYWHERE.</p>
+        <h1>DEMANDEM</h1>
+        <p class="hero-copy">Built under pressure.</p>
+        <a class="hero-link" href="#message">PRESSURE ON</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="message" class="section narrow reveal">
+        <p class="section-mark">THE MESSAGE</p>
+        <h2>Pressure isn’t the enemy.</h2>
+        <p class="body-copy">It’s the process. It shapes, tests, and leaves only what holds.</p>
+        <p class="body-copy">Comfort doesn’t create diamonds.</p>
+        <p class="statement">APPLY PRESSURE.</p>
+      </section>
+
+      <section class="section pillars reveal">
+  <p class="section-mark">FOUR PILLARS. ONE MINDSET.</p>
+  <p class="body-copy">Four forms of the same discipline.</p>
+
+  <div class="pillar-grid">
+    <div class="pillar">
+      <div class="pillar-number">01</div>
+      <div class="pillar-icon">◈</div>
+      <span>DIAMOND</span>
+      <small>Strength under pressure.</small>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-number">02</div>
+      <div class="pillar-icon">◯</div>
+      <span>WORLD</span>
+      <small>Vision without borders.</small>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-number">03</div>
+      <div class="pillar-icon">♛</div>
+      <span>CROWN</span>
+      <small>Ownership in form.</small>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-number">04</div>
+      <div class="pillar-icon">⛰</div>
+      <span>MOUNTAINS</span>
+      <small>Discipline in ascent.</small>
+    </div>
+  </div>
+</section>
+
+      <section class="section reveal countdown-wrap">
+        <p class="section-mark">CAMPAIGN 001</p>
+        <p class="body-copy">Pressure builds before the release.</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="product-intro">
+          <p class="section-mark">001</p>
+          <h2>Worn under pressure.</h2>
+          <p class="body-copy">A closer look at the first signal in motion.</p>
+        </div>
+
+        <div class="gallery-hero-strip">
+          <figure class="gallery-card gallery-hero">
+            <img src="images/couple-1.png" alt="Couple wearing the Demandem tee" />
+          </figure>
+
+          <div class="gallery-strip">
+            <figure class="gallery-card">
+              <img src="images/model-1.png" alt="Model wearing the Demandem tee" />
+            </figure>
+
+            <figure class="gallery-card">
+              <img src="images/detail-close.png" alt="Styled detail image of the Demandem tee" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product reveal" id="reveal">
+        <div class="product-intro">
+          <p class="section-mark">INITIATE BROADCAST</p>
+          <h2>FORMED UNDER PRESSURE</h2>
+          <p class="body-copy">Cut for clarity. Nothing extra.</p>
+        </div>
+
+        <div class="product-grid">
+          <figure class="product-card">
+            <img src="images/front.png" alt="Front view of the Demandem tee" />
+          </figure>
+
+          <figure class="product-card">
+            <img src="images/back-full.png" alt="Back view of the Demandem tee" />
+          </figure>
+
+          <figure class="product-card">
+            <img src="images/detail1.png" alt="Close-up of the pressure creates diamonds graphic" />
+          </figure>
+
+          <figure class="product-card">
+            <img src="images/detail2.png" alt="Close-up of the Demandem hem label" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section narrow reveal waitlist" id="waitlist">
+        <p class="section-mark">ACCESS POINT</p>
+        <h3>Be the first to know</h3>
+
+        <iframe
+          data-tally-src="https://tally.so/embed/pb0xNV?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="329"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="DEMANDEM — WAITLIST">
+        </iframe>
+
+        <div class="countdown-card">
+          <p class="countdown-label">Pre-order countdown</p>
+          <div id="countdown" class="countdown">00d 00h 00m 00s</div>
+          <p class="hidden-detail">Signal 001: 111 pieces.</p>
+        </div>
+
+        <p class="form-note">Release pending.</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function() {
+          if (typeof Tally !== "undefined") {
+            Tally.loadEmbeds();
+          } else {
+            d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e) {
+              e.src = e.dataset.tallySrc;
+            });
+          }
+        };
+    if (typeof Tally !== "undefined") {
+      v();
+    } else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement("script");
+      s.src = w;
+      s.onload = v;
+      s.onerror = v;
+      d.body.appendChild(s);
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
