@@ -5,7 +5,9 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(gh api *)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(sed -i '' '/<!-- TODO: Replace with real phone number -->/d' process/index.html)",
+      "Bash(sed -i '' 's|<a class=\"header-phone\" href=\"tel:+1XXXXXXXXXX\" aria-label=\"Call Tristan Web Studio\">\\(XXX\\) XXX-XXXX</a>||g' process/index.html)"
     ]
   }
 }
