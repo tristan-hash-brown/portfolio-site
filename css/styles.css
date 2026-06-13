@@ -263,6 +263,23 @@ a {
   background: var(--color-white);
 }
 
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.trust-strip span {
+  padding: 0.55rem 0.75rem;
+  color: #eaf1f8;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
 .hero-panel {
   min-height: 330px;
   display: grid;
@@ -665,6 +682,20 @@ h3 {
     url("/demos/sweetcrumb-cakes/assets/hero-custom-cake.png") center/cover;
 }
 
+.project-card .preview-plumbing {
+  color: #1f2f45;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(223, 234, 246, 0.8)),
+    linear-gradient(135deg, #cfe0f3 0 35%, #f9d58f 35% 52%, #ffffff 52%);
+}
+
+.project-card .preview-electrical {
+  color: #172d3d;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(242, 247, 250, 0.84)),
+    linear-gradient(135deg, #102a43 0 42%, #ffd23f 42% 58%, #f4f7f9 58%);
+}
+
 .project-card .preview-island-manila {
   color: #14332b;
   background:
@@ -674,8 +705,22 @@ h3 {
     linear-gradient(135deg, #fff3d2, #d8f0ce 52%, #ffd7c2);
 }
 
+.project-card .preview-brand {
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.5)),
+    linear-gradient(135deg, #121212, #393333 52%, #e8e2d6 52%);
+}
+
+.project-card .preview-brand span {
+  color: #121212;
+}
+
+.preview-plumbing span,
+.preview-electrical span,
 .preview-sweetcrumb span,
-.preview-island-manila span {
+.preview-island-manila span,
+.preview-brand span {
   padding: 0.6rem 0.8rem;
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(16, 42, 67, 0.14);
@@ -693,6 +738,12 @@ h3 {
 
 .project-card.is-placeholder {
   box-shadow: none;
+}
+
+.secondary-work {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-grey);
 }
 
 .project-label,
@@ -754,6 +805,18 @@ h3 {
   font-weight: 900;
 }
 
+.scope-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.2rem;
+  color: var(--color-muted);
+}
+
+.scope-list li {
+  padding-left: 0.1rem;
+}
+
 .timeline {
   display: grid;
   gap: 1rem;
@@ -804,6 +867,12 @@ h3 {
 .contact-form {
   display: grid;
   gap: 1rem;
+}
+
+.form-intro {
+  margin: 0 0 1rem;
+  color: var(--color-muted);
+  font-size: 1.02rem;
 }
 
 .field {

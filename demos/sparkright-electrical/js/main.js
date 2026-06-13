@@ -28,24 +28,8 @@
     var btn = form.querySelector("[type='submit']");
     var successEl = form.parentElement.querySelector(".form-success");
 
-    if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
-
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-      headers: { Accept: "application/json" }
-    })
-      .then(function (res) {
-        if (res.ok) {
-          form.style.display = "none";
-          if (successEl) successEl.style.display = "block";
-        } else {
-          throw new Error("server");
-        }
-      })
-      .catch(function () {
-        if (btn) { btn.disabled = false; btn.textContent = "Send Quote Request"; }
-        alert("Something went wrong — please call us at (905) 555-0188.");
-      });
+    if (btn) { btn.disabled = true; btn.textContent = "Request Sent"; }
+    form.style.display = "none";
+    if (successEl) successEl.style.display = "block";
   });
 })();

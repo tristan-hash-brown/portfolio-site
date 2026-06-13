@@ -18,6 +18,16 @@ body {
   color: var(--text);
 }
 
+.demo-disclaimer {
+  padding: 10px 16px;
+  color: var(--text);
+  background: #000;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 a { color: inherit; }
 img { width: 100%; display: block; }
 

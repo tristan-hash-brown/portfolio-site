@@ -32,17 +32,6 @@ body {
   line-height: 1.6;
 }
 
-.demo-disclaimer {
-  position: relative;
-  z-index: 2;
-  padding: 10px 16px;
-  color: var(--white);
-  background: var(--green);
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: 900;
-}
-
 body::before {
   content: "";
   position: fixed;

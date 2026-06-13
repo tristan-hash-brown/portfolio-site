@@ -29,6 +29,15 @@ body {
 
 body.has-sticky-call { padding-bottom: 76px; }
 
+.demo-disclaimer {
+  padding: 10px 16px;
+  color: var(--navy);
+  background: var(--yellow);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
 img, svg { display: block; max-width: 100%; }
 a { color: inherit; }
 :focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }

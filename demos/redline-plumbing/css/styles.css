@@ -36,6 +36,15 @@ body.has-sticky-call {
   padding-bottom: 76px;
 }
 
+.demo-disclaimer {
+  padding: 10px 16px;
+  color: var(--white);
+  background: var(--navy-dark);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 img,
 svg {
   display: block;

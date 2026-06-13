@@ -57,20 +57,15 @@ Note: GitHub Pages serves from a subdirectory path, which may affect root-relati
 ## Before Launch Checklist
 
 **Portfolio site**
-- [ ] Replace `https://yourdomain.ca/` canonical URLs with the live domain
-- [ ] Replace `hello@yourdomain.ca` with the real business email
-- [ ] Replace the Formspree endpoint in `contact/index.html`: `https://formspree.io/f/YOUR_FORM_ID`
+- [ ] Confirm `https://tristanwebstudio.ca/` is the intended live domain
+- [ ] Confirm `tristanyacub+webstudio@gmail.com` is the intended public business email
+- [ ] Confirm the contact form endpoint in `contact/index.html` is connected to the right inbox
 - [ ] Confirm all prices, service descriptions, and availability notes are accurate
 
-**Redline Plumbing demo**
-- [ ] Replace `https://example.com/...` canonical URLs and OG image URLs
-- [ ] Replace the Formspree endpoint: `https://formspree.io/f/YOUR_FORM_ID`
-- [ ] Replace the placeholder Google Business Profile link
-- [ ] Replace the placeholder business address if using for a real client
-
-**SparkRight Electrical demo**
-- [ ] Replace placeholder phone number, email, and business details
-- [ ] Replace `https://example.com/...` URLs
+**Fictional demos**
+- [ ] Keep the visible demo disclaimer on every fictional demo page
+- [ ] Keep demo forms simulated unless a real client endpoint is intentionally added
+- [ ] Replace fictional business details only when adapting a demo into a real client site
 
 ## Hosting Notes
 

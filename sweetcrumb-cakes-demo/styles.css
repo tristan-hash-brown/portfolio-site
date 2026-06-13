@@ -32,15 +32,6 @@ body {
   line-height: 1.6;
 }
 
-.demo-disclaimer {
-  padding: 10px 16px;
-  color: #fffaf7;
-  background: var(--plum);
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
 body.form-locked {
   scroll-behavior: auto;
 }
