@@ -800,4 +800,182 @@ textarea {
   .section {
     padding: 64px 0;
   }
+
+  .service-split {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* ── New utilities ───────────────────────────────────────────
+   Added to support conversion-feature upgrades.
+   All new rules — nothing above is changed.
+   ─────────────────────────────────────────────────────────── */
+
+/* Stat strip — About page */
+.stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 100px;
+  padding: 18px 14px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.stat-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--red);
+  line-height: 1;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+/* Response badge — Areas page */
+.badge-response {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+/* Review source line */
+.review-source {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* Why-us card grid — About page */
+.why-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Service section divider layout */
+.service-section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-section:last-of-type {
+  border-bottom: none;
+}
+
+.service-split {
+  display: grid;
+  gap: 24px;
+}
+
+/* Service CTA row */
+.service-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* Credentials list */
+.cred-list {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cred-list li {
+  position: relative;
+  padding-left: 22px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.cred-list li::before {
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: 900;
+  content: "✓";
+}
+
+/* Contact info DL layout */
+.contact-dl {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.contact-dl div {
+  display: grid;
+  gap: 2px;
+}
+
+.contact-dl dt {
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+}
+
+.contact-dl dd {
+  margin: 0;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.contact-dl a {
+  color: var(--red);
+}
+
+/* Inline nudge text */
+.nudge {
+  margin: 0 0 20px;
+  padding: 12px 16px;
+  background: #fff4f4;
+  border-left: 3px solid var(--red);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-weight: 700;
+  font-size: 0.93rem;
+  color: var(--ink);
+}
+
+.nudge a {
+  color: var(--red);
 }

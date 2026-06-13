@@ -28,32 +28,54 @@
   </header>
 
   <main id="main">
-    <section class="page-hero"><div class="container"><p class="eyebrow">Call or request a quote</p><h1>Tell Redline what needs fixing</h1><p>For urgent problems, call now. For non-emergency plumbing, use the short form and Redline will follow up.</p></div></section>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Call or request a quote</p><h1>Tell Redline what needs fixing</h1><p>For urgent problems, call directly — don't wait for a callback. For non-emergency work, the short form below gets you a response within the hour during business hours.</p></div></section>
+
     <section class="section">
       <div class="container contact-grid">
         <div class="quote-card" id="quote">
-          <div class="quote-card-header"><h2>Request a quote</h2><p>Five fields. No long questionnaire before the customer gets help.</p></div>
+          <div class="quote-card-header">
+            <h2>Request a quote</h2>
+            <p>Five fields. We'll call you back with availability and pricing.</p>
+          </div>
+          <p class="nudge">🚨 Emergency? <a href="tel:+19055550142" data-track-location="contact_nudge">Call (905) 555-0142</a> — we answer 24/7.</p>
           <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" data-quote-form data-form-location="contact_page">
             <!-- TODO: Replace Formspree placeholder endpoint with the live Redline form endpoint. -->
             <div class="field"><label for="contact-name">Name</label><input id="contact-name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="contact-phone">Phone</label><input id="contact-phone" name="phone" type="tel" autocomplete="tel" required></div>
-            <div class="field"><label for="contact-suburb">Suburb</label><input id="contact-suburb" name="suburb" autocomplete="address-level2" required></div>
-            <div class="field"><label for="contact-problem">Problem</label><textarea id="contact-problem" name="problem" required></textarea></div>
-            <div class="field"><label for="contact-time">Preferred time</label><select id="contact-time" name="preferred_time" required><option value="">Choose one</option><option>As soon as possible</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+            <div class="field"><label for="contact-suburb">Suburb</label><select id="contact-suburb" name="suburb" required><option value="">Select your city…</option><option>Hamilton</option><option>Stoney Creek</option><option>Ancaster</option><option>Dundas</option><option>Burlington</option><option>Other</option></select></div>
+            <div class="field"><label for="contact-problem">Problem</label><textarea id="contact-problem" name="problem" required placeholder="e.g. Slow drain in basement, leaking pipe under sink…"></textarea></div>
+            <div class="field"><label for="contact-time">Preferred time</label><select id="contact-time" name="preferred_time" required><option value="">Choose one</option><option>As soon as possible</option><option>Morning (7am–12pm)</option><option>Afternoon (12pm–5pm)</option><option>Evening (5pm–8pm)</option></select></div>
             <button class="btn-primary" type="submit">Send Quote Request</button>
-            <p class="form-note">Submitting this demo form will not contact a real plumbing company.</p>
+            <p class="form-note">🔒 Your info is never shared. Demo only — submitting will not contact a real company.</p>
           </form>
+          <div class="form-success" role="alert" style="display:none; padding:20px; background:#f0fdf4; border:1px solid #86efac; border-radius:8px; color:#166534; font-weight:700; margin-top:12px;">
+            ✅ Request received! We'll call you back within the hour.
+          </div>
         </div>
-        <aside class="trust-box">
-          <h2>Contact details</h2>
-          <dl class="info-list">
-            <div><dt>Phone</dt><dd><a href="tel:+19055550142" data-track-location="contact_details">(905) 555-0142</a></dd></div>
-            <div><dt>Address</dt><dd>123 King Street East, Hamilton, ON L8N 1A1</dd></div>
-            <div><dt>Emergency hours</dt><dd>24 hours, 7 days</dd></div>
-            <div><dt>Office hours</dt><dd>Monday-Friday, 8:00 AM-6:00 PM</dd></div>
-          </dl>
-          <a class="gbp-link" href="https://example.com/google-business-profile">Google Business Profile</a>
-          <div class="map-placeholder" role="img" aria-label="Placeholder map for Redline Plumbing office">Map placeholder<br>TODO: Replace with real office/service area map.</div>
+        <aside>
+          <div class="trust-box" style="margin-bottom:16px;">
+            <h2>Contact details</h2>
+            <dl class="contact-dl">
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+19055550142" data-track-location="contact_details">(905) 555-0142</a></dd>
+              </div>
+              <div>
+                <dt>Address</dt>
+                <dd>123 King Street East<br>Hamilton, ON L8N 1A1</dd>
+              </div>
+              <div>
+                <dt>Emergency hours</dt>
+                <dd>24 hours, 7 days a week</dd>
+              </div>
+              <div>
+                <dt>Office hours</dt>
+                <dd>Mon–Fri 7:00 AM–7:00 PM<br>Saturday 8:00 AM–5:00 PM</dd>
+              </div>
+            </dl>
+            <a class="gbp-link" href="https://example.com/google-business-profile">⭐ Google Business Profile</a>
+          </div>
+          <div class="map-placeholder" role="img" aria-label="Placeholder map for Redline Plumbing office">Map placeholder<br>TODO: Replace with embedded Google Maps iframe for the business address.</div>
         </aside>
       </div>
     </section>

@@ -25,5 +25,30 @@
     track("quote_submit", {
       form_location: form.getAttribute("data-form-location") || "unknown"
     });
+
+    // AJAX submission — shows success in-page instead of redirecting
+    event.preventDefault();
+    var btn = form.querySelector("[type='submit']");
+    var successEl = form.parentElement.querySelector(".form-success");
+
+    if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    })
+      .then(function (res) {
+        if (res.ok) {
+          form.style.display = "none";
+          if (successEl) successEl.style.display = "block";
+        } else {
+          throw new Error("server");
+        }
+      })
+      .catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = "Send Quote Request"; }
+        alert("Something went wrong — please call us at (905) 555-0142.");
+      });
   });
 })();
