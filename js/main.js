@@ -15,6 +15,32 @@ if (navToggle && siteNav) {
   });
 }
 
+// Contact form AJAX submission
+const contactForm = document.querySelector(".contact-form[data-contact-form]");
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const btn = contactForm.querySelector("[type='submit']");
+    const successEl = contactForm.parentElement.querySelector(".form-success");
+    if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+    fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: { Accept: "application/json" }
+    })
+      .then((res) => {
+        if (res.ok) {
+          contactForm.style.display = "none";
+          if (successEl) successEl.style.display = "block";
+        } else { throw new Error("server"); }
+      })
+      .catch(() => {
+        if (btn) { btn.disabled = false; btn.textContent = "Send Request"; }
+        alert("Something went wrong — please email hello@yourdomain.ca directly.");
+      });
+  });
+}
+
 const workTabs = document.querySelectorAll("[data-work-tab]");
 const workPanels = document.querySelectorAll("[data-work-panel]");
 

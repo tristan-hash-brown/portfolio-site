@@ -278,6 +278,110 @@ a {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
 }
 
+/* Demo preview card — replaces abstract mock browser on homepage */
+.demo-preview-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-grey);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.demo-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  background: var(--color-cloud);
+  border-bottom: 1px solid var(--color-grey);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.demo-preview-label {
+  color: var(--color-navy-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.demo-preview-tag {
+  color: var(--color-muted);
+}
+
+.demo-preview-hero {
+  padding: 1.2rem 1rem 1rem;
+  background: linear-gradient(135deg, #0e1b35 0%, #18406a 100%);
+  color: #fff;
+}
+
+.demo-preview-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffd1a0;
+  margin-bottom: 0.4rem;
+}
+
+.demo-preview-headline {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.demo-preview-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.demo-preview-btn-primary,
+.demo-preview-btn-outline {
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.demo-preview-btn-primary {
+  background: #d9322e;
+  color: #fff;
+}
+
+.demo-preview-btn-outline {
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.demo-preview-trust {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid var(--color-grey);
+}
+
+.demo-preview-trust span {
+  flex: 1;
+  padding: 0.55rem 0.5rem;
+  text-align: center;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--color-navy-dark);
+  border-right: 1px solid var(--color-grey);
+}
+
+.demo-preview-trust span:last-child {
+  border-right: none;
+}
+
+.demo-preview-cta {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+}
+
 .mock-top {
   display: flex;
   gap: 0.45rem;
