@@ -1184,3 +1184,10 @@ textarea {
     grid-auto-columns: minmax(390px, 34%);
   }
 }
+
+.scope-list {
+  margin: 0.75rem 0 1rem;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
