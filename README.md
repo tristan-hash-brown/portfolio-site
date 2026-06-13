@@ -1,6 +1,6 @@
 # Tristan Web Studio Portfolio
 
-A static portfolio website for a small web design service focused on quote-focused websites for local trades and service businesses.
+A static portfolio website for a small web design service focused on quote-focused websites for local trades, service businesses, makers, and food preorder businesses.
 
 ## Site Structure
 
@@ -9,6 +9,8 @@ index.html                          Home
 work/index.html                     Work / case studies index
 work/redline-plumbing/index.html    Redline Plumbing case study
 work/sparkright-electrical/         SparkRight Electrical case study
+work/sweetcrumb-cakes/              SweetCrumb Cakes strategy
+work/island-manila-bites/           Island Manila Bites strategy
 work/demandem/                      DEMANDEM case study
 pricing/index.html                  Pricing
 process/index.html                  Process
@@ -16,6 +18,8 @@ contact/index.html                  Contact
 
 demos/redline-plumbing/             Redline Plumbing & Drains demo
 demos/sparkright-electrical/        SparkRight Electrical demo
+demos/sweetcrumb-cakes/             SweetCrumb Cakes demo
+demos/island-manila-bites/          Island Manila Bites demo
 demos/demandem/                     DEMANDEM demo
 
 css/styles.css                      Portfolio site styles
@@ -28,7 +32,9 @@ js/main.js                          Portfolio site scripts
 |------|------|----------|
 | Redline Plumbing & Drains | Emergency plumbing, Hamilton ON | `/demos/redline-plumbing/` |
 | SparkRight Electrical | Residential electrician, Brampton/Mississauga | `/demos/sparkright-electrical/` |
-| DEMANDEM | Trades demand generation concept | `/demos/demandem/` |
+| SweetCrumb Cakes | Home bakery, Brampton | `/demos/sweetcrumb-cakes/` |
+| Island Manila Bites | Preorder snack boxes and party trays, Brampton | `/demos/island-manila-bites/` |
+| DEMANDEM | Brand landing page concept | `/demos/demandem/` |
 
 ## Deployment — Cloudflare Pages
 
