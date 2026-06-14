@@ -62,6 +62,7 @@ Note: GitHub Pages serves from a subdirectory path, which may affect root-relati
 ## Production Notes
 
 - Public contact email: `hello@tristanwebstudio.com`
+- Public phone: `(365) 576-0118` / `tel:+13655760118`
 - Contact form endpoint in `contact/index.html`: Formspree `mnjyovyd`
 - Keep the visible demo disclaimer on fictional demo pages.
 - Keep demo forms simulated unless a real client endpoint is intentionally added.
