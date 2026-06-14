@@ -66,7 +66,7 @@ if (form) {
       return;
     }
 
-    showMessage("Demo preorder received — in a real site, this would be sent to the business for availability, pricing, and pickup follow-up.");
+    showMessage("Demo request received — in a real site, this would be sent to the business for follow-up.");
     form.reset();
 
     if (dateField) {

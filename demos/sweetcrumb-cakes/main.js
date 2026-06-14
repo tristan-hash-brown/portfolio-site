@@ -38,7 +38,7 @@ if (quoteForm && formStatus) {
       eventDateField.min = new Date().toLocaleDateString("en-CA");
     }
     setStatus(
-      "Thanks — your quote details are ready. For this portfolio demo, no message was actually sent.",
+      "Demo request received — in a real site, this would be sent to the business for follow-up.",
       "success"
     );
   });

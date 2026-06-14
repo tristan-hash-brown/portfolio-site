@@ -16,7 +16,7 @@ A homeowner with a burst pipe at 10pm isn't browsing — they're panicking. Ever
 
 ### 1. Sticky Mobile Call Bar
 
-**What it is:** A fixed red bar pinned to the bottom of every screen on mobile that says "📞 Call Now — (905) 555-0142."
+**What it is:** A fixed red bar pinned to the bottom of every screen on mobile that says "📞 Call Now — (905) 555-0101."
 
 **Why it works:** On mobile, the header scrolls out of view within seconds. A homeowner 800px into reading your services page no longer has the phone number in front of them. The sticky bar solves this permanently — the call option is always one tap away, regardless of where they are on the page.
 
@@ -114,7 +114,7 @@ A homeowner with a burst pipe at 10pm isn't browsing — they're panicking. Ever
 
 ### 12. Contact Page — Emergency Nudge
 
-**What it is:** A red-bordered nudge above the form: "🚨 Emergency? Call (905) 555-0142 — we answer 24/7."
+**What it is:** A red-bordered nudge above the form: "🚨 Emergency? Call (905) 555-0101 — we answer 24/7."
 
 **Why it works:** Someone with a burst pipe who lands on the contact page should not be filling out a form — they should be calling. The nudge catches that scenario and redirects them to the phone before they waste time on a form that won't get them help fast enough.
 
