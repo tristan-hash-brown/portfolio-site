@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cutline Barber Co. | Mississauga Barbershop Demo</title>
+    <meta
+      name="description"
+      content="Cutline Barber Co. is a fictional barbershop demo for fades, men's cuts, beard trims, hot towel shaves, and easy appointment booking."
+    />
+    <meta property="og:title" content="Cutline Barber Co. | Barbershop Demo" />
+    <meta
+      property="og:description"
+      content="A fictional mobile-first barbershop website demo focused on booking, pricing, barbers, reviews, hours, and local visit details."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://tristanwebstudio.com/demos/cutline-barber-co/" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="demo-ribbon">Fictional demo website produced for portfolio purposes.</div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Cutline Barber Co. home">
+        <span class="brand-mark" aria-hidden="true">CB</span>
+        <span>
+          <strong>Cutline Barber Co.</strong>
+          <small>Mississauga neighbourhood barbershop</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#barbers">Barbers</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <a class="header-cta" href="#booking">Book a Cut</a>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Fades, cuts, beard work, and walk-ins</p>
+          <h1 id="hero-title">Sharp fades, clean cuts, easy booking.</h1>
+          <p class="hero-copy">
+            A modern neighbourhood barbershop for fades, beard trims, everyday cuts,
+            and first-time walk-ins across Mississauga and Brampton-style suburbs.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#booking">Book a Cut</a>
+            <a class="btn btn-secondary" href="tel:+19055550148">Call the Shop</a>
+          </div>
+          <ul class="trust-notes" aria-label="Shop highlights">
+            <li>Walk-ins welcome when chairs are open</li>
+            <li>Evening appointments available</li>
+            <li>Free nearby parking</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel" aria-label="Barbershop chair and tools illustration">
+          <div class="shop-window">
+            <span class="mirror"></span>
+            <span class="chair"></span>
+            <span class="tool tool-one"></span>
+            <span class="tool tool-two"></span>
+          </div>
+          <div class="availability-card">
+            <span>Today</span>
+            <strong>3 chairs open after 5 PM</strong>
+            <a href="#booking">Check times</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Cutline service signals">
+        <div><strong>4.9</strong><span>average rating</span></div>
+        <div><strong>4</strong><span>featured barbers</span></div>
+        <div><strong>Evening</strong><span>appointments</span></div>
+        <div><strong>Free</strong><span>nearby parking</span></div>
+        <div><strong>Walk-ins</strong><span>when chairs are open</span></div>
+      </section>
+
+      <section class="section-pad" id="services">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Services and pricing</p>
+            <h2>Know the service, price, and next step before you book.</h2>
+          </div>
+          <p>
+            Straightforward starting prices for everyday grooming, detailed fades,
+            beard work, and full-service visits.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div>
+              <h3>Men's Haircut</h3>
+              <p>Clean everyday cut with neckline cleanup and styling before you leave.</p>
+            </div>
+            <strong>From $35</strong>
+            <a href="#booking">Book this service</a>
+          </article>
+          <article class="service-card featured">
+            <div>
+              <h3>Skin Fade</h3>
+              <p>Tight fade work with crisp blending, lineup detail, and a polished finish.</p>
+            </div>
+            <strong>From $45</strong>
+            <a href="#booking">Book this service</a>
+          </article>
+          <article class="service-card">
+            <div>
+              <h3>Haircut + Beard</h3>
+              <p>A full visit for your cut, beard shape, neckline, and hot towel finish.</p>
+            </div>
+            <strong>From $55</strong>
+            <a href="#booking">Book this service</a>
+          </article>
+          <article class="service-card">
+            <div>
+              <h3>Beard Trim</h3>
+              <p>Shape, debulk, and line up your beard so it sits clean between cuts.</p>
+            </div>
+            <strong>From $20</strong>
+            <a href="#booking">Book this service</a>
+          </article>
+          <article class="service-card">
+            <div>
+              <h3>Kids Cut</h3>
+              <p>Patient cuts for younger clients, with simple styles and tidy edges.</p>
+            </div>
+            <strong>From $25</strong>
+            <a href="#booking">Book this service</a>
+          </article>
+          <article class="service-card">
+            <div>
+              <h3>Hot Towel Shave</h3>
+              <p>Traditional shave with warm towel prep, smooth finish, and aftercare.</p>
+            </div>
+            <strong>From $35</strong>
+            <a href="#booking">Book this service</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="first-visit section-pad">
+        <div class="section-intro">
+          <p class="eyebrow">New here?</p>
+          <h2>First time at Cutline?</h2>
+          <p>
+            Booking should be simple whether you have a regular barber or just need
+            the next available chair.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article>
+            <span>01</span>
+            <h3>Pick your service</h3>
+            <p>Choose a haircut, fade, beard service, shave, kids cut, or package.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Choose your barber</h3>
+            <p>Book with a specific barber or take the next available chair.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Book or call ahead</h3>
+            <p>Reserve online, or call before walking in so the shop can confirm wait time.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-pad" id="barbers">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Choose your chair</p>
+            <h2>Book with a barber who fits your style.</h2>
+          </div>
+          <p>
+            Pick a familiar chair or choose the next available barber when timing
+            matters most.
+          </p>
+        </div>
+
+        <div class="barber-grid">
+          <article class="barber-card">
+            <div class="barber-avatar" aria-hidden="true">M</div>
+            <h3>Marcus</h3>
+            <p class="specialty">Skin fades and beard shaping</p>
+            <p>Known for sharp blends, calm consults, and beard lines that grow out clean.</p>
+            <a href="#booking">Book with Marcus</a>
+          </article>
+          <article class="barber-card">
+            <div class="barber-avatar" aria-hidden="true">E</div>
+            <h3>Eli</h3>
+            <p class="specialty">Classic cuts and scissor work</p>
+            <p>Great for tidy office cuts, longer texture, and customers who want a softer finish.</p>
+            <a href="#booking">Book with Eli</a>
+          </article>
+          <article class="barber-card">
+            <div class="barber-avatar" aria-hidden="true">J</div>
+            <h3>Jay</h3>
+            <p class="specialty">Tapers, lineups, and kids cuts</p>
+            <p>Fast, friendly, and careful with first visits, school cuts, and weekend refreshes.</p>
+            <a href="#booking">Book with Jay</a>
+          </article>
+          <article class="barber-card">
+            <div class="barber-avatar" aria-hidden="true">A</div>
+            <h3>Andre</h3>
+            <p class="specialty">Hot towel shaves and full grooming</p>
+            <p>Best for unrushed shaves, full grooming packages, and clean beard resets.</p>
+            <a href="#booking">Book with Andre</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section section-pad" id="gallery">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2>A quick look at the details customers care about.</h2>
+          </div>
+          <p>
+            Recent cuts, shop details, and the finishes customers ask for most.
+          </p>
+        </div>
+
+        <div class="gallery-grid" aria-label="Barbershop visual gallery">
+          <article class="gallery-tile fade-detail">
+            <span>Fade detail</span>
+          </article>
+          <article class="gallery-tile beard-lineup">
+            <span>Beard lineup</span>
+          </article>
+          <article class="gallery-tile shop-chair">
+            <span>Shop chair</span>
+          </article>
+          <article class="gallery-tile tools">
+            <span>Clippers/tools</span>
+          </article>
+          <article class="gallery-tile finished-cut">
+            <span>Finished cut</span>
+          </article>
+          <article class="gallery-tile shop-interior">
+            <span>Shop interior</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews-section section-pad" id="reviews">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reviews</p>
+            <h2>What a strong local reputation can communicate.</h2>
+          </div>
+          <p>
+            Customer language helps new visitors understand the shop experience
+            before they book.
+          </p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="Five star review">★★★★★</div>
+            <p>"Booked from my phone, walked in right on time, and left with a clean fade."</p>
+            <strong>D. Harris</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="Five star review">★★★★★</div>
+            <p>"No long wait, friendly barbers, and the beard lineup was exactly what I asked for."</p>
+            <strong>M. Singh</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="Five star review">★★★★★</div>
+            <p>"Good first visit. They explained the service, checked the length, and kept it easy."</p>
+            <strong>A. Carter</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="visit-section section-pad" id="visit">
+        <div class="visit-card">
+          <div>
+            <p class="eyebrow">Visit Cutline</p>
+            <h2>Easy to find, easy to book, easy to walk in.</h2>
+            <p>
+              This address and phone number are fictional demo details for portfolio
+              purposes and do not represent an operating business.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="#booking">Book a Cut</a>
+              <a class="btn btn-secondary" href="tel:+19055550148">Call the Shop</a>
+              <a class="btn btn-outline" href="#visit">See Hours & Parking</a>
+            </div>
+          </div>
+
+          <div class="visit-details">
+            <article>
+              <h3>Address</h3>
+              <p>1200 Lakeshore Road W<br />Mississauga, ON</p>
+              <span>Free parking behind the shop</span>
+            </article>
+            <article>
+              <h3>Phone</h3>
+              <p><a href="tel:+19055550148">(905) 555-0148</a></p>
+              <span>Tap to call on mobile</span>
+            </article>
+            <article>
+              <h3>Hours</h3>
+              <p>
+                Mon-Fri: 10 AM-8 PM<br />
+                Saturday: 9 AM-6 PM<br />
+                Sunday: 11 AM-4 PM
+              </p>
+              <span>Evening appointments available</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section section-pad" id="booking">
+        <div class="booking-box">
+          <div class="booking-intro">
+            <p class="eyebrow">Ready when you are</p>
+            <h2>Book your next cut.</h2>
+            <p>
+              Choose a service, send a request, or call before walking in so the
+              shop can confirm timing.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-secondary" href="tel:+19055550148">Call Before Walking In</a>
+            </div>
+          </div>
+
+          <form class="booking-form" action="#booking" method="post">
+            <div class="form-grid">
+              <label for="booking-service">
+                <span>Service</span>
+                <select id="booking-service" name="service" required>
+                  <option value="">Choose a service</option>
+                  <option>Men's Haircut</option>
+                  <option>Skin Fade</option>
+                  <option>Haircut + Beard</option>
+                  <option>Beard Trim</option>
+                  <option>Kids Cut</option>
+                  <option>Hot Towel Shave</option>
+                </select>
+              </label>
+
+              <label for="booking-barber">
+                <span>Preferred barber</span>
+                <select id="booking-barber" name="barber">
+                  <option value="">Next available chair</option>
+                  <option>Marcus</option>
+                  <option>Eli</option>
+                  <option>Jay</option>
+                  <option>Andre</option>
+                </select>
+              </label>
+
+              <label for="booking-time">
+                <span>Preferred day/time</span>
+                <input id="booking-time" name="time" type="text" placeholder="Saturday after 2 PM" required />
+              </label>
+
+              <label for="booking-name">
+                <span>Name</span>
+                <input id="booking-name" name="name" type="text" autocomplete="name" required />
+              </label>
+
+              <label for="booking-contact">
+                <span>Phone or email</span>
+                <input id="booking-contact" name="contact" type="text" autocomplete="tel email" required />
+              </label>
+
+              <label class="form-wide" for="booking-notes">
+                <span>Optional notes</span>
+                <textarea id="booking-notes" name="notes" rows="4" placeholder="Fade height, beard details, or walk-in timing question"></textarea>
+              </label>
+            </div>
+
+            <button class="form-submit" type="submit">Send Booking Request</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Cutline Barber Co.</strong>
+        <p>Fictional demo website produced for portfolio purposes.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#barbers">Barbers</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </footer>
+
+    <div class="mobile-action-bar" aria-label="Quick actions">
+      <a href="#booking">Book Now</a>
+      <a href="tel:+19055550148">Call</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
