@@ -50,7 +50,7 @@ if (contactForm) {
       })
       .catch(() => {
         if (btn) { btn.disabled = false; btn.textContent = "Get a Free Pricing Call"; }
-        alert("Something went wrong — please email tristanyacub+webstudio@gmail.com directly.");
+        alert("Something went wrong — please email hello@tristanwebstudio.com directly.");
       });
   });
 }

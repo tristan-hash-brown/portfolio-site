@@ -2,6 +2,9 @@
 
 A static portfolio website for a small web design service focused on quote-focused websites for local trades, service businesses, makers, and food preorder businesses.
 
+Live site:
+https://tristanwebstudio.com
+
 ## Site Structure
 
 ```text
@@ -32,6 +35,7 @@ js/main.js                          Portfolio site scripts
 | Demo | Type | Location |
 |------|------|----------|
 | Redline Plumbing & Drains | Emergency plumbing, Hamilton ON | `/demos/redline-plumbing/` |
+| SummitShield Roofing | Roofing and exteriors, Brampton/GTA | `/demos/summitshield-roofing/` |
 | SparkRight Electrical | Residential electrician, Brampton/Mississauga | `/demos/sparkright-electrical/` |
 | SweetCrumb Cakes | Home bakery, Brampton | `/demos/sweetcrumb-cakes/` |
 | Island Manila Bites | Preorder snack boxes and party trays, Brampton | `/demos/island-manila-bites/` |
@@ -55,19 +59,13 @@ js/main.js                          Portfolio site scripts
 
 Note: GitHub Pages serves from a subdirectory path, which may affect root-relative links (`/css/styles.css`, etc.). Cloudflare Pages with a custom domain is the recommended setup.
 
-## Before Launch Checklist
+## Production Notes
 
-**Portfolio site**
-- [ ] Confirm `https://tristanwebstudio.ca/` is the intended live domain
-- [x] `EMAIL_ADDRESS_HERE` confirmed as public business email
-- [x] Contact form endpoint in `contact/index.html` connected to real Formspree endpoint (`mnjyovyd`)
-- [x] Pricing urgency banner updated for current founding-client availability
-- [ ] Confirm all prices, service descriptions, and availability notes are accurate
-
-**Fictional demos**
-- [ ] Keep the visible demo disclaimer on every fictional demo page
-- [ ] Keep demo forms simulated unless a real client endpoint is intentionally added
-- [ ] Replace fictional business details only when adapting a demo into a real client site
+- Public contact email: `hello@tristanwebstudio.com`
+- Contact form endpoint in `contact/index.html`: Formspree `mnjyovyd`
+- Keep the visible demo disclaimer on fictional demo pages.
+- Keep demo forms simulated unless a real client endpoint is intentionally added.
+- Replace fictional business details only when adapting a demo into a real client site.
 
 ## Hosting Notes
 
