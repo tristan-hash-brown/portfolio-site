@@ -66,7 +66,7 @@ if (form) {
       return;
     }
 
-    showMessage("Thanks — your preorder request has been received. We’ll reply with availability, total, and pickup details before confirming.");
+    showMessage("Demo preorder received — in a real site, this would be sent to the business for availability, pricing, and pickup follow-up.");
     form.reset();
 
     if (dateField) {
