@@ -49,7 +49,7 @@ if (contactForm) {
         } else { throw new Error("server"); }
       })
       .catch(() => {
-        if (btn) { btn.disabled = false; btn.textContent = "Get a Free Pricing Call"; }
+        if (btn) { btn.disabled = false; btn.textContent = "Send My Project Details"; }
         alert("Something went wrong — please email hello@tristanwebstudio.com directly.");
       });
   });
