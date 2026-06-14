@@ -1413,6 +1413,12 @@ textarea {
   font-weight: 700;
 }
 
+@media (max-width: 520px) {
+  .trust-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Problem / Solution ── */
 .problem-block,
 .solution-block {
