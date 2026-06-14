@@ -12,7 +12,7 @@ Demo site by Tristan Web Studio. Island Manila Bites is a fictional sample brand
 
 This concept is for home cooks, bakers, snack sellers, caterers, and Instagram-based food businesses that take weekly preorders, party tray requests, and catering inquiries for family gatherings, birthdays, office lunches, community events, and weekend orders.
 
-## Portfolio Case Study Angle
+## Portfolio Demo Strategy Angle
 
 The demo shows how Tristan Web Studio can help local food businesses replace scattered Instagram DMs, WhatsApp messages, and manual preorder lists with a clearer customer flow:
 

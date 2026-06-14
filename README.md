@@ -10,11 +10,11 @@ https://tristanwebstudio.com
 ```text
 index.html                          Home
 work/index.html                     Work / case studies index
-work/redline-plumbing/index.html    Redline Plumbing case study
-work/sparkright-electrical/         SparkRight Electrical case study
+work/redline-plumbing/index.html    Redline Plumbing demo strategy
+work/sparkright-electrical/         SparkRight Electrical demo strategy
 work/sweetcrumb-cakes/              SweetCrumb Cakes strategy
 work/island-manila-bites/           Island Manila Bites strategy
-work/demandem/                      DEMANDEM case study
+work/demandem/                      DEMANDEM demo strategy
 pricing/index.html                  Pricing
 process/index.html                  Process
 contact/index.html                  Contact
