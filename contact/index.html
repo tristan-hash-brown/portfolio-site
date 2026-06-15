@@ -42,6 +42,7 @@
           <h1>Let's get your phone ringing.</h1>
           <p>Tell me about your business and I'll reply within 2 hours with the right package and next steps &#8212; no pressure, no sales pitch.</p>
           <span class="contact-response-note">&#10003;&nbsp; Response within 2 hours during business hours</span>
+          <p style="margin:1rem 0 0; color:var(--color-muted); font-size:0.95rem;">Best first step: send your project details below. Prefer to talk first? Book a free 15-minute call or email me directly.</p>
         </div>
       </section>
 
@@ -62,7 +63,7 @@
 
             <div>
               <p class="eyebrow">&#128197;&nbsp; Book a free 15-min call</p>
-              <p style="margin:0 0 0.75rem; color:var(--color-muted); font-size:0.9rem;">Schedule a 15-minute strategy call. No pressure. We'll tell you which tier fits your business and answer all your questions.</p>
+              <p style="margin:0 0 0.75rem; color:var(--color-muted); font-size:0.9rem;">Schedule a 15-minute strategy call. No pressure. I'll tell you which option fits your business and answer your questions.</p>
               <a class="calendly-btn" href="https://calendly.com/tristanyacub" target="_blank" rel="noopener noreferrer" aria-label="Book a free 15-minute strategy call on Calendly">
                 &#128197;&nbsp; Pick a time that works
               </a>
@@ -82,7 +83,8 @@
 
           <!-- RIGHT: Short form -->
           <div>
-            <p class="form-intro">Fill this out and I'll email you a pricing breakdown within 2 hours.</p>
+            <p class="form-intro">Fill this out and I'll reply with the best-fit next step and a rough package direction.</p>
+            <p style="margin:0 0 1rem; font-size:0.85rem; color:var(--color-muted);">Not ready for a full website? Mention that in the form &#8212; I can point you toward a Website Review, Quote Path Cleanup, or Landing Page Refresh instead.</p>
             <form class="contact-form" action="https://formspree.io/f/mnjyovyd" method="post" data-contact-form>
               <div class="field">
                 <label for="name">Your name</label>
@@ -111,8 +113,21 @@
                   <option value="other">Other</option>
                 </select>
               </div>
+              <div class="field">
+                <label for="help_with">What do you need help with?</label>
+                <select id="help_with" name="help_with">
+                  <option value="" disabled selected>Select an option&hellip;</option>
+                  <option value="new-website">New website</option>
+                  <option value="improve-existing-website">Improve existing website</option>
+                  <option value="website-review">Website Review</option>
+                  <option value="quote-path-cleanup">Quote Path Cleanup</option>
+                  <option value="landing-page-refresh">Landing Page Refresh</option>
+                  <option value="not-sure-yet">Not sure yet</option>
+                </select>
+              </div>
               <button class="button button-primary" type="submit" style="width:100%; justify-content:center;">Send My Project Details</button>
-              <p class="form-note" style="text-align:center;">I'll email you within 2 hours with the right package for your business.</p>
+              <p class="form-note" style="text-align:center;">I'll reply within 2 business hours with the best-fit next step and a rough package direction.</p>
+              <p class="form-note" style="text-align:center;">I only use your details to reply about your website inquiry.</p>
             </form>
             <div class="form-success" role="alert" style="display:none; padding:24px; background:#f0fdf4; border:1px solid #86efac; border-radius:8px; color:#166534; font-weight:700; margin-top:12px;">
               Got it &#8212; I'll be in touch within 2 hours.
