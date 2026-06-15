@@ -3718,6 +3718,12 @@ html[data-theme="dark"] label {
   color: var(--color-text);
 }
 
+/* "Built for" audience pills: navy label text was invisible on the
+   dark pill surface (background/border already remap, color did not) */
+html[data-theme="dark"] .fit-tags span {
+  color: var(--color-text);
+}
+
 /* Inline / accent links readable on dark */
 html[data-theme="dark"] .text-link,
 html[data-theme="dark"] .faq-answer a,
