@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Work | Tristan Web Studio</title>
-    <meta name="description" content="Demo websites for local trades and service businesses — plumbing, electrical, bakery, food preorder, and brand campaign. Built to show structure, mobile experience, and quote-conversion strategy.">
+    <meta name="description" content="Fictional demo websites for local service, food, hospitality, brand, and product businesses. Built to show structure, mobile experience, and conversion strategy.">
     <meta property="og:title" content="Work | Tristan Web Studio">
-    <meta property="og:description" content="Fictional demo websites showing how quote-focused trade sites should be structured. See the mobile experience, conversion paths, and design strategy behind each one.">
+    <meta property="og:description" content="Fictional demo websites for local service, food, hospitality, brand, and product businesses. See the mobile experience, conversion paths, and design strategy behind each one.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tristanwebstudio.com/work/">
     <meta property="og:image" content="https://tristanwebstudio.com/img/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Work | Tristan Web Studio">
-    <meta name="twitter:description" content="Portfolio demos for local service websites.">
+    <meta name="twitter:description" content="Portfolio demos for local service, food, hospitality, brand, and product websites.">
     <meta name="twitter:image" content="https://tristanwebstudio.com/img/og-image.jpg">
     <link rel="canonical" href="https://tristanwebstudio.com/work/">
     <link rel="stylesheet" href="/css/styles.css">
@@ -58,8 +58,23 @@
         </div>
       </section>
 
+      <section class="work-filter-section" aria-labelledby="work-filter-title">
+        <div class="container">
+          <div class="work-filter-head">
+            <h2 id="work-filter-title">Browse demos by category</h2>
+            <p>Jump straight to the examples closest to your business type.</p>
+          </div>
+          <div class="work-tabs" aria-label="Demo categories">
+            <button class="work-tab is-active" type="button" data-work-filter="all" aria-pressed="true">All Demos</button>
+            <button class="work-tab" type="button" data-work-filter="local-service" aria-pressed="false">Local Service</button>
+            <button class="work-tab" type="button" data-work-filter="food-hospitality" aria-pressed="false">Food &amp; Hospitality</button>
+            <button class="work-tab" type="button" data-work-filter="brand-product" aria-pressed="false">Brand &amp; Product</button>
+          </div>
+        </div>
+      </section>
+
       <!-- FEATURED QUOTE-FOCUSED DEMOS -->
-      <section class="section">
+      <section class="section" data-work-category-section>
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Featured Quote-Focused Demos</p>
@@ -70,7 +85,7 @@
           <div class="case-study-grid">
 
             <!-- REDLINE PLUMBING -->
-            <article class="case-study-card">
+            <article class="case-study-card" data-category="local-service">
               <div class="cs-meta">
                 <span class="cs-badge">Plumbing</span>
                 <span class="cs-badge">Hamilton, ON</span>
@@ -141,7 +156,7 @@
             </article>
 
             <!-- SPARKRIGHT ELECTRICAL -->
-            <article class="case-study-card">
+            <article class="case-study-card" data-category="local-service">
               <div class="cs-meta">
                 <span class="cs-badge">Electrical</span>
                 <span class="cs-badge">Brampton &amp; Mississauga, ON</span>
@@ -212,7 +227,7 @@
             </article>
 
             <!-- SUMMITSHIELD ROOFING -->
-            <article class="case-study-card">
+            <article class="case-study-card" data-category="local-service">
               <div class="cs-meta">
                 <span class="cs-badge">Roofing</span>
                 <span class="cs-badge">Brampton &amp; GTA, ON</span>
@@ -282,12 +297,81 @@
               </div>
             </article>
 
+            <article class="case-study-card" data-category="local-service">
+              <div class="cs-meta">
+                <span class="cs-badge">Barbershop</span>
+                <span class="cs-badge">Mississauga, ON</span>
+              </div>
+              <div class="demo-thumbnail demo-thumb-barber" aria-label="Illustrated Cutline Barber Co. website preview">
+                <div class="thumb-browser">
+                  <div class="thumb-bar"><span></span><span></span><span></span></div>
+                  <div class="thumb-layout">
+                    <div class="thumb-copy">
+                      <span class="thumb-kicker">Online Booking</span>
+                      <strong>Sharp fades, clean cuts.</strong>
+                      <div class="thumb-actions"><span class="thumb-cta">Book Now</span><span class="thumb-link">Call the Shop</span></div>
+                      <div class="thumb-pills"><span class="thumb-pill">Per-barber booking</span><span class="thumb-pill">Walk-in friendly</span></div>
+                    </div>
+                    <div class="thumb-art" aria-hidden="true"><span class="thumb-ground"></span><span class="thumb-pole"></span><span class="thumb-mirror"></span></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Cutline Barber Co.</h3>
+
+              <div>
+                <p class="cs-section-label">Challenge</p>
+                <p style="margin:0; color:var(--color-muted); font-size:0.95rem;">Barbershops lose bookings when customers can't quickly see services, prices, or book a specific barber online &#8212; so they default to calling or walking in blind.</p>
+              </div>
+
+              <div>
+                <p class="cs-section-label">Solution</p>
+                <p style="margin:0; color:var(--color-muted); font-size:0.95rem;">Booking-focused site with per-barber selection, a transparent service-and-price menu, a call-ahead path, and walk-in wait-time guidance.</p>
+              </div>
+
+              <div>
+                <p class="cs-section-label">What this build is designed to do</p>
+                <div class="cs-results-grid">
+                  <div class="cs-metric">
+                    <span class="cs-metric-number">Per-barber</span>
+                    <span class="cs-metric-label">Book a specific chair</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cs-metric-number">Upfront</span>
+                    <span class="cs-metric-label">Service &amp; price before booking</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cs-metric-number">Mobile</span>
+                    <span class="cs-metric-label">Book in a few taps</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="cs-section-label">Conversion focus</p>
+                <p style="margin:0; color:var(--color-muted); font-size:0.95rem;">Make services, prices, and the booking step obvious &#8212; for a specific barber or the next available chair.</p>
+              </div>
+
+              <div>
+                <p class="cs-section-label">What this demo includes</p>
+                <ul class="cs-how-list">
+                  <li>Per-barber booking flow with individual barber profiles</li>
+                  <li>Service menu with prices and a clear next step</li>
+                  <li>Call-ahead path with walk-in wait-time guidance</li>
+                  <li>Static HTML/CSS/JS &#8212; fast load, no dependencies</li>
+                </ul>
+              </div>
+
+              <div class="button-row">
+                <a class="button button-primary" href="/demos/cutline-barber-co/">View Demo</a>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
 
       <!-- BRAND & RANGE DEMOS -->
-      <section class="section section-muted">
+      <section class="section section-muted" data-work-category-section>
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Brand &amp; Range Demos</p>
@@ -297,7 +381,7 @@
 
           <div class="case-study-grid">
 
-            <article class="case-study-card">
+            <article class="case-study-card" data-category="food-hospitality">
               <div class="cs-meta">
                 <span class="cs-badge">Home Bakery</span>
                 <span class="cs-badge">Brampton, ON</span>
@@ -362,7 +446,7 @@
               </div>
             </article>
 
-            <article class="case-study-card">
+            <article class="case-study-card" data-category="food-hospitality">
               <div class="cs-meta">
                 <span class="cs-badge">Food Preorder</span>
                 <span class="cs-badge">Brampton, ON</span>
@@ -432,7 +516,7 @@
       </section>
 
       <!-- VISUAL RANGE PIECES -->
-      <section class="section">
+      <section class="section" data-work-category-section>
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Brand &amp; Range</p>
@@ -441,7 +525,7 @@
 
           <div class="case-study-grid">
 
-            <article class="case-study-card">
+            <article class="case-study-card" data-category="brand-product">
               <div class="cs-meta">
                 <span class="cs-badge">Branding / Product Demo</span>
                 <span class="cs-badge">Range Piece</span>
@@ -487,7 +571,7 @@
               </div>
             </article>
 
-            <article class="case-study-card">
+            <article class="case-study-card" data-category="brand-product">
               <div class="cs-meta">
                 <span class="cs-badge">Brand Campaign</span>
                 <span class="cs-badge">Marketing / Launch</span>
@@ -560,7 +644,7 @@
         <div class="container cta-box">
           <div>
             <p class="eyebrow">Want a site like this for your business?</p>
-            <h2>Tell me about your trade and I'll put together the right approach.</h2>
+            <h2>Tell me about your business and I'll put together the right approach.</h2>
           </div>
           <a class="button button-light" href="/contact/">Get a Free Quote</a>
         </div>

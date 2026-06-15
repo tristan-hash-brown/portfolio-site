@@ -656,11 +656,32 @@ h3 {
   background: var(--color-white);
 }
 
+.work-filter-section {
+  padding: 1.5rem 0 0;
+  background: var(--color-white);
+}
+
+.work-filter-head {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.work-filter-head h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 4vw, 1.8rem);
+}
+
+.work-filter-head p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
 .work-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   padding: 0.4rem;
   background: var(--color-cloud);
   border: 1px solid var(--color-grey);
@@ -696,8 +717,21 @@ h3 {
   box-shadow: 0 8px 18px rgba(16, 42, 67, 0.08);
 }
 
+.work-tab[aria-pressed="true"] {
+  color: var(--color-navy-dark);
+  background: var(--color-white);
+  border-color: var(--color-grey);
+  box-shadow: 0 8px 18px rgba(16, 42, 67, 0.08);
+}
+
 .work-panel {
   padding-top: 0.5rem;
+}
+
+@media (max-width: 520px) {
+  .work-tab {
+    flex: 1 1 calc(50% - 0.75rem);
+  }
 }
 
 .carousel-heading {
@@ -2766,4 +2800,41 @@ details[open] .faq-question::after {
 .faq-answer a {
   color: var(--color-blue);
   font-weight: 700;
+}
+
+/* ── CUTLINE BARBER THUMBNAIL ────────────────────────────────── */
+.demo-thumb-barber {
+  --thumb-accent: #c0392b;
+}
+
+.demo-thumb-barber .thumb-art {
+  background: linear-gradient(160deg, #e7eef5 0 46%, #1b2733 47% 100%);
+}
+
+.thumb-pole {
+  left: 16%;
+  bottom: 16%;
+  width: 14%;
+  height: 52%;
+  border-radius: 999px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--thumb-accent) 0 22%,
+    #ffffff 22% 44%,
+    #1d4f91 44% 66%,
+    #ffffff 66% 88%
+  );
+  box-shadow: 0 12px 22px rgba(16, 42, 67, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.thumb-mirror {
+  right: 14%;
+  bottom: 18%;
+  width: 40%;
+  height: 46%;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #dfe8f1, #b9c8d8);
+  border: 4px solid #e7c79a;
+  box-shadow: 0 14px 24px rgba(16, 42, 67, 0.25);
 }

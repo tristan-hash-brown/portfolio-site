@@ -55,25 +55,32 @@ if (contactForm) {
   });
 }
 
-const workTabs = document.querySelectorAll("[data-work-tab]");
-const workPanels = document.querySelectorAll("[data-work-panel]");
+const workFilters = document.querySelectorAll("[data-work-filter]");
+const workCards = document.querySelectorAll("[data-category]");
+const workCategorySections = document.querySelectorAll("[data-work-category-section]");
 
-if (workTabs.length && workPanels.length) {
-  workTabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const selectedCategory = tab.getAttribute("data-work-tab");
+if (workFilters.length && workCards.length) {
+  function applyWorkFilter(selectedCategory) {
+    workFilters.forEach((filter) => {
+      const isSelected = filter.getAttribute("data-work-filter") === selectedCategory;
+      filter.classList.toggle("is-active", isSelected);
+      filter.setAttribute("aria-pressed", String(isSelected));
+    });
 
-      workTabs.forEach((item) => {
-        const isSelected = item === tab;
-        item.classList.toggle("is-active", isSelected);
-        item.setAttribute("aria-selected", String(isSelected));
-      });
+    workCards.forEach((card) => {
+      const isVisible = selectedCategory === "all" || card.getAttribute("data-category") === selectedCategory;
+      card.hidden = !isVisible;
+    });
 
-      workPanels.forEach((panel) => {
-        const isSelected = panel.getAttribute("data-work-panel") === selectedCategory;
-        panel.classList.toggle("is-active", isSelected);
-        panel.hidden = !isSelected;
-      });
+    workCategorySections.forEach((section) => {
+      const hasVisibleCard = section.querySelector("[data-category]:not([hidden])");
+      section.hidden = !hasVisibleCard;
+    });
+  }
+
+  workFilters.forEach((filter) => {
+    filter.addEventListener("click", () => {
+      applyWorkFilter(filter.getAttribute("data-work-filter") || "all");
     });
   });
 }
