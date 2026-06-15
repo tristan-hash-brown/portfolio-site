@@ -820,16 +820,46 @@ h3 {
 }
 
 .price {
-  margin: 0.4rem 0 1rem;
+  display: grid;
+  gap: 0.28rem;
+  margin: 0.35rem 0 1rem;
   color: var(--color-navy);
+  line-height: 1.02;
+}
+
+.price span {
+  color: var(--color-muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.price strong {
+  color: var(--color-navy-dark);
   font-size: clamp(2rem, 5vw, 2.7rem);
-  line-height: 1;
   font-weight: 900;
 }
 
 .price-card.highlight {
-  border-color: var(--color-accent);
-  box-shadow: 0 22px 56px rgba(16, 42, 67, 0.2);
+  background:
+    linear-gradient(180deg, rgba(245, 158, 11, 0.1), rgba(251, 252, 254, 0) 34%),
+    var(--surface-warm);
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 24px 58px rgba(16, 42, 67, 0.22);
+}
+
+.price-card.highlight .badge {
+  padding: 0.36rem 0.7rem;
+  color: var(--color-navy-dark);
+  background: #fff3d8;
+  border: 1px solid rgba(245, 158, 11, 0.58);
+  border-radius: 999px;
+}
+
+.price-card.highlight .button-primary {
+  width: 100%;
+  box-shadow: 0 16px 30px rgba(245, 158, 11, 0.32);
 }
 
 .check-list {
@@ -1566,6 +1596,43 @@ textarea {
 }
 
 /* ── Smaller ways to start (secondary intro offers) ── */
+.pricing-packages {
+  background:
+    linear-gradient(180deg, var(--color-white) 0%, #f7f9fc 100%);
+}
+
+.pricing-packages .price-card:not(.highlight),
+.intro-offers .intro-offer,
+.pricing-faq .card {
+  box-shadow: 0 12px 28px rgba(16, 42, 67, 0.09);
+}
+
+.pricing-packages .price-card:not(.highlight) {
+  border-color: #d1d9e3;
+}
+
+.intro-offers {
+  background: var(--color-white);
+  border-top: 1px solid rgba(16, 42, 67, 0.08);
+}
+
+.intro-offers .intro-offer {
+  background: #f7f9fc;
+}
+
+.pricing-care {
+  border-block: 1px solid rgba(245, 158, 11, 0.18);
+}
+
+.pricing-faq {
+  background: #f2f6fa;
+  border-top: 1px solid rgba(16, 42, 67, 0.08);
+}
+
+.pricing-faq .card {
+  background: var(--color-white);
+}
+
 .intro-offer {
   display: flex;
   flex-direction: column;
