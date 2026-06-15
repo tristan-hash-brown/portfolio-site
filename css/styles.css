@@ -1584,6 +1584,21 @@ textarea {
   font-weight: 900;
 }
 
+/* ── Pricing/tax note ── */
+.pricing-note {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* ── Custom tier examples ── */
+.custom-examples {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
 /* ── Calendly placeholder button ── */
 .calendly-btn {
   display: inline-flex;
