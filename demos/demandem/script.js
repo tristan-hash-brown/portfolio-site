@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('is-ready');
 });
 
-const launchDate = new Date('2026-07-01T00:00:00');
+const launchDate = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
 const countdownEl = document.getElementById('countdown');
 
 function updateCountdown() {

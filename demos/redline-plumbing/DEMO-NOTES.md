@@ -132,7 +132,7 @@ A homeowner with a burst pipe at 10pm isn't browsing — they're panicking. Ever
 
 **What it is:** Machine-readable structured data on every page describing the business — name, phone, address, hours, services, service areas.
 
-**Why it matters:** This is what powers Google's local Knowledge Panel, enables star ratings in search results, and helps the site appear in "plumber near me" searches. It's invisible to visitors but directly affects how many arrive in the first place.
+**Why it matters:** Structured data helps search engines understand the business — name, phone, address, hours, services, and service areas — which supports local search visibility and eligibility for richer search features over time. It does not on its own guarantee rankings, star ratings in results, or a Knowledge Panel (those also depend on a Google Business Profile, real reviews, and Google's discretion). It's foundational technical SEO that's invisible to visitors.
 
 ---
 
