@@ -1,3 +1,44 @@
+// Theme toggle (light / dark). The early-init inline script in <head>
+// has already applied the saved or system-preferred theme to <html>;
+// here we wire the header button to it and keep it in sync.
+(function () {
+  const THEME_KEY = "tristan-theme";
+  const root = document.documentElement;
+  const toggle = document.querySelector("[data-theme-toggle]");
+  if (!toggle) return;
+
+  const iconEl = toggle.querySelector(".theme-toggle-icon");
+  const textEl = toggle.querySelector(".theme-toggle-text");
+
+  function currentTheme() {
+    return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  }
+
+  function render(theme) {
+    const isDark = theme === "dark";
+    toggle.setAttribute("aria-pressed", String(isDark));
+    toggle.setAttribute(
+      "aria-label",
+      isDark ? "Switch to light theme" : "Switch to dark theme"
+    );
+    if (iconEl) iconEl.textContent = isDark ? "☾" : "☀";
+    if (textEl) textEl.textContent = isDark ? "Dark" : "Light";
+  }
+
+  render(currentTheme());
+
+  toggle.addEventListener("click", () => {
+    const next = currentTheme() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch (e) {
+      /* localStorage unavailable — theme still applies for this session */
+    }
+    render(next);
+  });
+})();
+
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 

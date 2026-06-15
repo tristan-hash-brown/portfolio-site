@@ -16,6 +16,10 @@
   --radius: 8px;
   --container: 1120px;
   --space-section: clamp(3.5rem, 7vw, 6rem);
+  /* Theme-aware surfaces (overridden in dark mode) */
+  --bg-body: #eef3f8;
+  --surface: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.96);
 }
 
 * {
@@ -30,7 +34,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--color-text);
-  background: #eef3f8;
+  background: var(--bg-body);
   line-height: 1.6;
 }
 
@@ -71,8 +75,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid rgba(16, 42, 67, 0.14);
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--header-border, rgba(16, 42, 67, 0.14));
   backdrop-filter: blur(12px);
 }
 
@@ -117,7 +121,7 @@ a {
   position: absolute;
   inset: 72px 1rem auto 1rem;
   padding: 0.75rem;
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -147,7 +151,7 @@ a {
   display: grid;
   place-content: center;
   gap: 5px;
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
   border-radius: var(--radius);
   box-shadow: 0 8px 18px rgba(16, 42, 67, 0.08);
@@ -169,6 +173,60 @@ a {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  padding: 0 0.7rem;
+  color: var(--color-navy-dark);
+  background: var(--surface);
+  border: 1px solid var(--color-grey);
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(16, 42, 67, 0.08);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.theme-toggle-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  border-color: var(--color-accent-dark);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid rgba(245, 158, 11, 0.45);
+  outline-offset: 2px;
+}
+
+/* On very narrow screens, keep just the icon to avoid header crowding */
+@media (max-width: 400px) {
+  .theme-toggle-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .theme-toggle {
+    padding: 0;
+    width: 44px;
+    justify-content: center;
+  }
 }
 
 .hero {
@@ -297,14 +355,14 @@ a {
   width: min(100%, 460px);
   overflow: hidden;
   color: var(--color-text);
-  background: var(--color-white);
+  background: var(--surface);
   border-radius: var(--radius);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
 }
 
 /* Demo preview card — replaces abstract mock browser on homepage */
 .demo-preview-card {
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
   border-radius: var(--radius);
   overflow: hidden;
@@ -470,7 +528,7 @@ a {
 
 .mock-form span {
   height: 34px;
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
 }
 
@@ -495,7 +553,7 @@ a {
 
 .section {
   padding: var(--space-section) 0;
-  background: var(--color-white);
+  background: var(--surface);
 }
 
 .section-muted {
@@ -653,12 +711,12 @@ h3 {
 }
 
 .work-browser {
-  background: var(--color-white);
+  background: var(--surface);
 }
 
 .work-filter-section {
   padding: 1.5rem 0 0;
-  background: var(--color-white);
+  background: var(--surface);
 }
 
 .work-filter-head {
@@ -702,7 +760,7 @@ h3 {
 
 .work-tab:hover,
 .work-tab:focus {
-  background: var(--color-white);
+  background: var(--surface);
 }
 
 .work-tab:focus {
@@ -712,14 +770,14 @@ h3 {
 
 .work-tab.is-active {
   color: var(--color-navy-dark);
-  background: var(--color-white);
+  background: var(--surface);
   border-color: var(--color-grey);
   box-shadow: 0 8px 18px rgba(16, 42, 67, 0.08);
 }
 
 .work-tab[aria-pressed="true"] {
   color: var(--color-navy-dark);
-  background: var(--color-white);
+  background: var(--surface);
   border-color: var(--color-grey);
   box-shadow: 0 8px 18px rgba(16, 42, 67, 0.08);
 }
@@ -973,7 +1031,7 @@ textarea {
   width: 100%;
   padding: 0.85rem 0.9rem;
   color: var(--color-text);
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
   border-radius: var(--radius);
   font: inherit;
@@ -1190,7 +1248,7 @@ textarea {
 
 .review-card {
   padding: 1.35rem;
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
   border-radius: var(--radius);
 }
@@ -1217,7 +1275,7 @@ textarea {
 
 .service-area-list li {
   padding: 0.6rem 0.8rem;
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid #c7d2dc;
   border-radius: var(--radius);
   font-weight: 800;
@@ -1612,7 +1670,7 @@ textarea {
 }
 
 .intro-offers {
-  background: var(--color-white);
+  background: var(--surface);
   border-top: 1px solid rgba(16, 42, 67, 0.08);
 }
 
@@ -1630,7 +1688,7 @@ textarea {
 }
 
 .pricing-faq .card {
-  background: var(--color-white);
+  background: var(--surface);
 }
 
 .intro-offer {
@@ -2727,7 +2785,7 @@ textarea {
 
 .demo-notice-section {
   padding: 1.25rem 0 0;
-  background: var(--color-white);
+  background: var(--surface);
 }
 
 .demo-notice {
@@ -3021,7 +3079,7 @@ details[open] .faq-question::after {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
   border-radius: 6px;
   font-size: 0.6rem;
@@ -3034,7 +3092,7 @@ details[open] .faq-question::after {
   align-items: center;
   gap: 0.4rem;
   padding: 0.45rem 0.55rem;
-  background: var(--color-white);
+  background: var(--surface);
   border-bottom: 1px solid var(--color-grey);
 }
 
@@ -3354,7 +3412,7 @@ details[open] .faq-question::after {
 
 .pm-field {
   height: 0.55rem;
-  background: var(--color-white);
+  background: var(--surface);
   border: 1px solid var(--color-grey);
   border-radius: 3px;
 }
@@ -3514,4 +3572,169 @@ details[open] .faq-question::after {
   .scope-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+/* ===========================================================
+   DARK THEME
+   Activated by the [data-theme="dark"] attribute on <html>,
+   set by the early-init inline script and the header toggle.
+   Brand colors (navy, amber, blue) are preserved; only the
+   neutral surfaces/text are re-mapped for a deep-navy theme.
+   =========================================================== */
+html[data-theme="dark"] {
+  /* Neutral surfaces & text */
+  --bg-body: #0e1a27;
+  --surface: #16212e;
+  --surface-warm: #18222f;
+  --color-cloud: #1b2735;
+  --surface-border: #2c3a4c;
+  --color-grey: #2c3a4c;
+  --color-text: #e6edf5;
+  --color-muted: #a7b4c4;
+  --header-bg: rgba(13, 24, 36, 0.92);
+  --header-border: rgba(255, 255, 255, 0.09);
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+  --shadow-strong: 0 24px 58px rgba(0, 0, 0, 0.6);
+}
+
+/* Header chrome */
+html[data-theme="dark"] .nav-toggle-bar {
+  background: var(--color-text);
+}
+
+html[data-theme="dark"] .header-phone {
+  color: #fbe3c0;
+  background: rgba(245, 158, 11, 0.16);
+}
+
+html[data-theme="dark"] .theme-toggle {
+  color: var(--color-text);
+}
+
+/* Headings & dark-on-light text now sitting on dark surfaces */
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] .card h3,
+html[data-theme="dark"] .placeholder-card h3,
+html[data-theme="dark"] .price-card h2,
+html[data-theme="dark"] .contact-form h2,
+html[data-theme="dark"] .contact-aside h2,
+html[data-theme="dark"] .metric-number,
+html[data-theme="dark"] .cs-metric-number,
+html[data-theme="dark"] .contact-phone-big,
+html[data-theme="dark"] .contact-email-link,
+html[data-theme="dark"] .faq-question,
+html[data-theme="dark"] .scope-includes-label,
+html[data-theme="dark"] .spark-service-card h3,
+html[data-theme="dark"] .pm-logo,
+html[data-theme="dark"] .pm-stat,
+html[data-theme="dark"] .price strong,
+html[data-theme="dark"] .demo-preview-label {
+  color: #f2f6fb;
+}
+
+/* Secondary navy/blue text on dark surfaces */
+html[data-theme="dark"] .site-nav a,
+html[data-theme="dark"] .button-secondary,
+html[data-theme="dark"] .work-tab,
+html[data-theme="dark"] .work-tab.is-active,
+html[data-theme="dark"] .work-tab[aria-pressed="true"],
+html[data-theme="dark"] .calendly-btn,
+html[data-theme="dark"] .intro-offer-price,
+html[data-theme="dark"] .demo-preview-trust span,
+html[data-theme="dark"] label {
+  color: var(--color-text);
+}
+
+/* Inline / accent links readable on dark */
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .faq-answer a,
+html[data-theme="dark"] .contact-phone-big:hover {
+  color: #6ba4e0;
+}
+
+html[data-theme="dark"] .contact-phone-block a:not(.calendly-btn),
+html[data-theme="dark"] .container.narrow a,
+html[data-theme="dark"] main .section .container > div[style*="background:var(--color-cloud)"] a {
+  color: #8fc5ff !important;
+}
+
+html[data-theme="dark"] .contact-phone-block a:not(.calendly-btn):hover,
+html[data-theme="dark"] .contact-phone-block a:not(.calendly-btn):focus,
+html[data-theme="dark"] .container.narrow a:hover,
+html[data-theme="dark"] .container.narrow a:focus,
+html[data-theme="dark"] main .section .container > div[style*="background:var(--color-cloud)"] a:hover,
+html[data-theme="dark"] main .section .container > div[style*="background:var(--color-cloud)"] a:focus {
+  color: #fbe3c0 !important;
+}
+
+/* Muted section sub-copy that used a fixed light-grey literal */
+html[data-theme="dark"] .section-heading p {
+  color: var(--color-muted);
+}
+
+/* Amber info chips: dark-amber tint + warm light text */
+html[data-theme="dark"] .card-icon,
+html[data-theme="dark"] .contact-response-note,
+html[data-theme="dark"] .week-badge,
+html[data-theme="dark"] .week-input-tag,
+html[data-theme="dark"] .scope-icon,
+html[data-theme="dark"] .demo-notice {
+  color: #fbe3c0;
+  background: rgba(245, 158, 11, 0.16);
+}
+
+/* Case-study metric / testimonial boxes (were fixed light blue) */
+html[data-theme="dark"] .cs-metric,
+html[data-theme="dark"] .cs-testimonial {
+  background: var(--surface-warm);
+  border-color: var(--surface-border);
+}
+
+/* FAQ rows (were #fff) */
+html[data-theme="dark"] .faq-item {
+  background: var(--surface);
+}
+
+/* Pricing & intro-offer surfaces (were fixed light) */
+html[data-theme="dark"] .pricing-packages {
+  background: #111d2a;
+}
+
+html[data-theme="dark"] .intro-offers .intro-offer {
+  background: #1b2735;
+}
+
+html[data-theme="dark"] .pricing-faq {
+  background: #111d2a;
+}
+
+html[data-theme="dark"] .pricing-packages .price-card:not(.highlight) {
+  border-color: var(--surface-border);
+}
+
+/* Spark case-study preview bands (were fixed light) */
+html[data-theme="dark"] .spark-services,
+html[data-theme="dark"] .spark-area-band {
+  background: #111d2a;
+}
+
+html[data-theme="dark"] .spark-service-card,
+html[data-theme="dark"] .service-area-list li {
+  border-color: var(--surface-border);
+}
+
+/* mock-trust chips (homepage mock-up) */
+html[data-theme="dark"] .mock-trust span {
+  background: #1b2735;
+  color: var(--color-text);
+}
+
+/* Keep the demo-example card a light "framed screenshot" on the
+   already-dark demo section: pin its inner trust chip to light so
+   the cloud-variable remap doesn't darken it. */
+html[data-theme="dark"] .demo-example-trust span {
+  color: #34485f;
+  background: #e8eef5;
 }
