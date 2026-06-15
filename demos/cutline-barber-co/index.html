@@ -49,32 +49,35 @@
     </header>
 
     <main id="main">
-      <section class="hero section-pad" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <p class="eyebrow">Fades, cuts, beard work, and walk-ins</p>
-          <h1 id="hero-title">Sharp fades, clean cuts, easy booking.</h1>
-          <p class="hero-copy">
-            A modern neighbourhood barbershop for fades, beard trims, everyday cuts,
-            and first-time walk-ins across Mississauga and Brampton-style suburbs.
-          </p>
-          <div class="button-row">
-            <a class="btn btn-primary" href="#booking">Book a Cut</a>
-            <a class="btn btn-secondary" href="tel:+19055550148">Call the Shop</a>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-media"
+          src="assets/cutline-hero.webp"
+          alt="A Cutline barber lining up a client's beard in a dark, modern barbershop"
+          fetchpriority="high"
+          width="1700"
+          height="956"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-inner section-pad">
+          <div class="hero-content">
+            <p class="eyebrow">Fades · Cuts · Beard work · Walk-ins</p>
+            <h1 id="hero-title">Sharp fades, clean cuts, easy booking.</h1>
+            <p class="hero-copy">
+              A modern neighbourhood barbershop for fades, beard trims, everyday cuts,
+              and first-time walk-ins across Mississauga and Brampton-style suburbs.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="#booking">Book a Cut</a>
+              <a class="btn btn-secondary" href="tel:+19055550148">Call the Shop</a>
+            </div>
+            <ul class="trust-notes" aria-label="Shop highlights">
+              <li>Walk-ins welcome when chairs are open</li>
+              <li>Evening appointments available</li>
+              <li>Free nearby parking</li>
+            </ul>
           </div>
-          <ul class="trust-notes" aria-label="Shop highlights">
-            <li>Walk-ins welcome when chairs are open</li>
-            <li>Evening appointments available</li>
-            <li>Free nearby parking</li>
-          </ul>
-        </div>
 
-        <div class="hero-panel" aria-label="Barbershop chair and tools illustration">
-          <div class="shop-window">
-            <span class="mirror"></span>
-            <span class="chair"></span>
-            <span class="tool tool-one"></span>
-            <span class="tool tool-two"></span>
-          </div>
           <div class="availability-card">
             <span>Today</span>
             <strong>3 chairs open after 5 PM</strong>
@@ -240,24 +243,46 @@
         </div>
 
         <div class="gallery-grid" aria-label="Barbershop visual gallery">
-          <article class="gallery-tile fade-detail">
-            <span>Fade detail</span>
-          </article>
-          <article class="gallery-tile beard-lineup">
-            <span>Beard lineup</span>
-          </article>
-          <article class="gallery-tile shop-chair">
-            <span>Shop chair</span>
-          </article>
-          <article class="gallery-tile tools">
-            <span>Clippers/tools</span>
-          </article>
-          <article class="gallery-tile finished-cut">
-            <span>Finished cut</span>
-          </article>
-          <article class="gallery-tile shop-interior">
-            <span>Shop interior</span>
-          </article>
+          <figure class="gallery-tile gallery-tall">
+            <img
+              src="assets/cutline-fade-detail.webp"
+              alt="Close-up of a crisp skin fade blended cleanly into the hairline"
+              loading="lazy"
+              width="280"
+              height="340"
+            />
+            <figcaption>Fade detail</figcaption>
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/cutline-beard-detail.webp"
+              alt="A Cutline barber shaping a client's beard line with clippers"
+              loading="lazy"
+              width="1456"
+              height="1080"
+            />
+            <figcaption>Beard lineup</figcaption>
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/cutline-tools.webp"
+              alt="Clippers, combs, scissors, brush, and towel arranged on the counter"
+              loading="lazy"
+              width="357"
+              height="265"
+            />
+            <figcaption>Tools &amp; counter</figcaption>
+          </figure>
+          <figure class="gallery-tile gallery-wide">
+            <img
+              src="assets/cutline-barber-atmosphere.webp"
+              alt="Two Cutline barbers setting up their chairs in the dark, modern shop"
+              loading="lazy"
+              width="1536"
+              height="1024"
+            />
+            <figcaption>In the shop</figcaption>
+          </figure>
         </div>
       </section>
 
