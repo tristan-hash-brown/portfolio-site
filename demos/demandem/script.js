@@ -36,3 +36,14 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+// Inert demo waitlist — no data is sent anywhere.
+const waitlistForm = document.getElementById('waitlist-form');
+if (waitlistForm) {
+  waitlistForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const confirmEl = document.getElementById('waitlist-confirm');
+    if (confirmEl) confirmEl.hidden = false;
+    waitlistForm.reset();
+  });
+}
