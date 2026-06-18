@@ -2105,6 +2105,66 @@ textarea {
   margin: 0.25rem 0 1.1rem;
 }
 
+/* Secondary Website Review callout (subordinate to main quote CTA) */
+.review-callout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.75rem;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-cloud);
+  border: 1px solid var(--color-grey);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+}
+
+.review-callout-text {
+  flex: 1 1 320px;
+}
+
+.review-callout-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-accent-dark);
+  margin: 0 0 0.3rem;
+}
+
+.review-callout-text p:not(.review-callout-eyebrow) {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--color-muted);
+}
+
+.review-callout-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  flex: 0 0 auto;
+}
+
+.review-callout-actions .button {
+  min-height: 44px;
+}
+
+.review-callout-link {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--color-blue);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.review-callout-link:hover,
+.review-callout-link:focus {
+  text-decoration: underline;
+}
+
 .cs-section-label {
   font-size: 0.75rem;
   font-weight: 900;
@@ -3965,6 +4025,20 @@ html[data-theme="dark"] main .section .container > div[style*="background:var(--
 /* Muted section sub-copy that used a fixed light-grey literal */
 html[data-theme="dark"] .section-heading p {
   color: var(--color-muted);
+}
+
+/* Website Review callout — readable accents on dark navy surface */
+html[data-theme="dark"] .review-callout-eyebrow {
+  color: var(--color-accent);
+}
+
+html[data-theme="dark"] .review-callout-link {
+  color: #8fc5ff;
+}
+
+html[data-theme="dark"] .review-callout-link:hover,
+html[data-theme="dark"] .review-callout-link:focus {
+  color: #fbe3c0;
 }
 
 /* Amber info chips: dark-amber tint + warm light text */
