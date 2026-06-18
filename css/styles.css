@@ -2080,6 +2080,12 @@ textarea {
   color: var(--color-white);
 }
 
+.cs-badge-format {
+  background: transparent;
+  border-color: var(--color-grey);
+  color: var(--color-muted);
+}
+
 .cs-section-label {
   font-size: 0.75rem;
   font-weight: 900;
