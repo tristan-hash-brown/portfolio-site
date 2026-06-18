@@ -25,6 +25,8 @@ demos/sweetcrumb-cakes/             SweetCrumb Cakes demo
 demos/island-manila-bites/          Island Manila Bites demo
 demos/demandem/                     DEMANDEM brand campaign demo
 demos/summitshield-roofing/         SummitShield Roofing demo
+demos/cutline-barber-co/            Cutline Barber Co. demo
+demos/molt-studio/                  MOLT Studio jewelry brand demo
 
 css/styles.css                      Portfolio site styles
 js/main.js                          Portfolio site scripts
@@ -39,6 +41,8 @@ js/main.js                          Portfolio site scripts
 | SparkRight Electrical | Residential electrician, Brampton/Mississauga | `/demos/sparkright-electrical/` |
 | SweetCrumb Cakes | Home bakery, Brampton | `/demos/sweetcrumb-cakes/` |
 | Island Manila Bites | Preorder snack boxes and party trays, Brampton | `/demos/island-manila-bites/` |
+| Cutline Barber Co. | Barbershop, Mississauga ON | `/demos/cutline-barber-co/` |
+| MOLT Studio | Handmade jewelry brand demo | `/demos/molt-studio/` |
 | DEMANDEM | Brand landing page concept | `/demos/demandem/` |
 
 ## Deployment — Cloudflare Pages
